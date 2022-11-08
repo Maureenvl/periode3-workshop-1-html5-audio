@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Spotify Web Player</title>
-</head>
-<body>
-    <audio src="assets/audio/file_example_MP3_700KB.mp3" controls></audio>
-    <audio src="assets/audio/17 When You Walk Away.mp3" controls></audio>
-    <audio src="assets/audio/rickastley.mp3" controls></audio>
-    <audio src="assets/audio/rickrol.mp3" controls></audio>
-</body>
+  </head>
+  <body>
+    <audio src="assets/audio/file_example_MP3_700KB.webm" controls></audio>
+    <audio src="assets/audio/17 When You Walk Away.webm" controls></audio>
+    <audio src="assets/audio/rickastley.webm" controls></audio>
+    <audio src="assets/audio/rickrol.webm" controls></audio>
+    <audio src="assets/audio/wachtenopark.webm" controls></audio>
+
+    <ul>
+      <li>
+        <img
+          src="assets/img/leuk-octopus.png"
+          width="250"
+          height="250"
+          onclick="playSong(1);"
+        />
+      </li>
+      <li>
+        <img
+          src="assets/img/ZStxukpD_400x400.jpg"
+          width="250"
+          height="250"
+          onclick="playSong(2);"
+        />
+      </li>
+      <li>
+        <img
+          src="assets/img/Rick-Astley.webp"
+          width="250"
+          height="250"
+          onclick="playSong(3);"
+        />
+      </li>
+      <li>
+        <img
+          src="assets/img/aVwjWAn_460s.jpg"
+          width="250"
+          height="250"
+          onclick="playSong(4);"
+        />
+      </li>
+      <li>
+        <img
+          src="assets/img/Joost-Bouhof-1_befafbdeaa69072c8d2039a707714164.png"
+          width="250"
+          height="250"
+          onclick="playSong(5);"
+        />
+      </li>
+    </ul>
+
+    <script>
+      function playSong(index) {
+        alert(
+          "Dear mister playa, could you please play the song with index ${index} for me?"
+        );
+      }
+    </script>
+  </body>
 </html>
