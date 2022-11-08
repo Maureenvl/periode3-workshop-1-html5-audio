@@ -1,0 +1,39 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    max-width: 600px;
+    margin-block: 2rem;
+    margin-inline: auto;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  li {
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 3rem;
+  
+    aspect-ratio: 2/1;
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+  
+  li:nth-child(odd) {
+    background-color: salmon;
+  }
+  
+  li:nth-child(even) {
+    background-color: rebeccapurple;
+  }
+  
+  
